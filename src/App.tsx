@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Accordion from "./components/Accordion/Accordion";
-import {Rating} from "./components/Rating/Rating";
+import {Rating, Test} from "./components/Rating/Rating";
 
 function App() {
     console.log("App rendered")
@@ -19,6 +19,7 @@ function App() {
             <Rating value={3} />
             <Rating value={4} />
             <Rating value={5} />
+            <Test/>
         </div>
     );
 }
