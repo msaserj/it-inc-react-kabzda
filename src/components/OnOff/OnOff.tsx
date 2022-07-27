@@ -2,28 +2,27 @@ import React, {useState} from "react";
 
 
 type PropsType = {
-    //on: boolean
+    on: boolean
+    onChange: (on: boolean) => void
 }
 
 
 export const OnOff = (props: PropsType) => {
 
 
-    let [on, setOn] = useState(false)
-
     const onStyle = {
         width: "30px",
         height: "20px",
         border: "2px solid black",
         display: "inline-block",
-        backgroundColor: on ? "green" : ""
+        backgroundColor: props.on ? "green" : ""
     }
     const offStyle = {
         width: "30px",
         height: "20px",
         border: "2px solid black",
         display: "inline-block",
-        backgroundColor: on ? "" : "red"
+        backgroundColor: props.on ? "" : "red"
     }
     const lampStyle = {
         width: "15px",
@@ -32,14 +31,14 @@ export const OnOff = (props: PropsType) => {
         border: "2px solid black",
         display: "inline-block",
         marginLeft: "10px",
-        backgroundColor: on ? "green" : "red"
+        backgroundColor: props.on ? "green" : "red"
     }
     return (
         <div>
             {/*On*/}
             <div className="on">
-                <div style={onStyle} onClick={()=>{setOn(true)}} >ON</div>
-                <div style={offStyle} onClick={()=>{setOn(false)}} >OFF</div>
+                <div style={onStyle} onClick={()=>{props.onChange(true)}} >ON</div>
+                <div style={offStyle} onClick={()=>{props.onChange(false)}} >OFF</div>
                 <div style={lampStyle}/>
             </div>
         </div>

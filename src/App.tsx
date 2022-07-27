@@ -12,11 +12,12 @@ function App() {
 
     let [rattingValue, setRatingValue] = useState<RatingValueType>(0)
     let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
+    let [switchOn, setSwitchOn] = useState<boolean>(false)
 
     return (
         <div className="App">
-            <OnOff/>
-            <OnOff/>
+            <OnOff on={switchOn} onChange={(on)=>{setSwitchOn(on)}}/>
+
 
             <UncontrolledAccordion titleValue={"menu"}/>
             <UncontrolledRating />
