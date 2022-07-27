@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 
 type PropsType = {
@@ -15,14 +15,16 @@ export const OnOff = (props: PropsType) => {
         height: "20px",
         border: "2px solid black",
         display: "inline-block",
-        backgroundColor: props.on ? "green" : ""
+        backgroundColor: props.on ? "green" : "",
+        cursor: "pointer"
     }
     const offStyle = {
         width: "30px",
         height: "20px",
         border: "2px solid black",
         display: "inline-block",
-        backgroundColor: props.on ? "" : "red"
+        backgroundColor: props.on ? "" : "red",
+        cursor: "pointer"
     }
     const lampStyle = {
         width: "15px",

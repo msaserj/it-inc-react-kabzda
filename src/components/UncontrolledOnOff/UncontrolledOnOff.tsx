@@ -4,27 +4,30 @@ import React, {useState} from "react";
 type PropsType = {
     //on: boolean
     onChange: (on: boolean) => void
+    defaultOn?: boolean
 }
 
 
 export const UncontrolledOnOff = (props: PropsType) => {
 
 
-    let [on, setOn] = useState(false)
+    let [on, setOn] = useState(props.defaultOn ? props.defaultOn : false)
 
     const onStyle = {
         width: "30px",
         height: "20px",
         border: "2px solid black",
         display: "inline-block",
-        backgroundColor: on ? "green" : ""
+        backgroundColor: on ? "green" : "",
+        cursor: "pointer"
     }
     const offStyle = {
         width: "30px",
         height: "20px",
         border: "2px solid black",
         display: "inline-block",
-        backgroundColor: on ? "" : "red"
+        backgroundColor: on ? "" : "red",
+        cursor: "pointer"
     }
     const lampStyle = {
         width: "15px",

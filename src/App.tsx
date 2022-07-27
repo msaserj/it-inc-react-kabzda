@@ -21,7 +21,7 @@ function App() {
             -----
             <UncontrolledAccordion titleValue={"menu"}/>
             <UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}
-            <UncontrolledRating  />
+            <UncontrolledRating   onChange={value => value}/>
             -----
             -----
             <Rating value={rattingValue} onClick={setRatingValue}/>
