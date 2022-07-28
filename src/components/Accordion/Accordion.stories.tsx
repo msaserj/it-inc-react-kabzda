@@ -12,10 +12,10 @@ export default {
 
 const callback = action("Accordion clicked")
 
-export const CollapsedMode = () => <Accordion  collapsed={true} onChange={callback} titleValue="menu1"/>
-export const UncollapsedMode = () => <Accordion  collapsed={false} onChange={callback} titleValue="menu2"/>
+export const CollapsedMode = () => <Accordion  collapsed={false} onChange={callback} titleValue="menu1" items={["hjh"]}/>
+export const UncollapsedMode = () => <Accordion  collapsed={true} onChange={callback} titleValue="menu2" items={["Vasya", "Pasha", "Vanya"]}/>
 
 export const CollapsingAccordion = () => {
     const [value, setValue] = useState<boolean>(false)
-    return <Accordion  collapsed={value} onChange={()=>{setValue(!value)}} titleValue="menu1"/>
+    return <Accordion  collapsed={value} onChange={()=>{setValue(!value)}} titleValue="menu3" items={["Vasya", "Pasha", "Vanya"]}/>
 }

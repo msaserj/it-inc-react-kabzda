@@ -17,6 +17,7 @@ function App() {
 
     return (
         <div className="App">
+            <PageTitle title="some title"/>
             -----
             -----
             <UncontrolledAccordion titleValue={"menu"}/>
@@ -28,7 +29,8 @@ function App() {
             <Accordion
                 titleValue="menu"
                 collapsed={accordionCollapsed}
-                onChange={()=>{setAccordionCollapsed(!accordionCollapsed)}}/>
+                onChange={()=>{setAccordionCollapsed(!accordionCollapsed)}}
+                items={["Igor", "Sasha"]}/>
             <OnOff on={switchOn} onChange={(on)=>{setSwitchOn(on)}}/>
 
         </div>
