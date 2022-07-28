@@ -30,7 +30,7 @@ function App() {
                 titleValue="menu"
                 collapsed={accordionCollapsed}
                 onChange={()=>{setAccordionCollapsed(!accordionCollapsed)}}
-                items={["Igor", "Sasha"]}/>
+                items={[{title: "Vasya", value: 1}, {title: "Alex", value: 2}, {title: "Pasha", value: 3}]}  onClick={x=>x}/>
             <OnOff on={switchOn} onChange={(on)=>{setSwitchOn(on)}}/>
 
         </div>
