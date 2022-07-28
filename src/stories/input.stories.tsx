@@ -32,3 +32,5 @@ export const GetValueOfUncontrolledInputByButtonPress = () => {
         <input ref={inputRef} /> <button onClick={save}>SAVE</button> - actual value: {value}
     </>
 }
+
+export const  ControlledInputWithFixedValue = () => <input value="fixed value"/>
