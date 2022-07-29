@@ -11,4 +11,8 @@
     padding: 5px;
 }
 
+.item.selected {
+    background-color: #8080f1;
+    color: white;
+}
 
