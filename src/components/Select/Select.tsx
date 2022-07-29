@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import css from './Select.module.css'
 
 type SelectPropsType = {
@@ -14,22 +14,29 @@ type ItemType = {
 
 
 export function Select(props: SelectPropsType) {
-    console.log("UncontrolledRating rendered")
+
+    const [active, setActive] = useState(false)
+
     const selectedItem = props.items.find(i => i.value === props.value)
+    const togleItems = () => setActive(!active)
+    const onItemClick = (value: any) => {
+        props.onChange(value)
+        togleItems()
+    }
+
     return (
         <>
-            <select name="Cities">
-                <option value="1">Minsk</option>
-                <option value="2">Moskva</option>
-                <option value="3">Kostroma</option>
-            </select>
             <div className={css.select}>
+                <span className={css.main} onClick={togleItems}>{selectedItem && selectedItem.title}</span>
+                {active &&
+                    <div className={css.items}>
+                        {props.items.map(i => <div
+                            key={i.value}
+                            onClick={()=> {onItemClick(i.value)} }
 
-                <h3>{selectedItem && selectedItem.title}</h3>
-                <div className={css.items}>
-                    {props.items.map(i => <div key={i.value}>{i.title}</div>)}
-                </div>
-
+                        >{i.title}</div>)}
+                    </div>
+                }
             </div>
         </>
 
