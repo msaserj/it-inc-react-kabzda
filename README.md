@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+<h1 align="center">Tutorial project for learning React</h1>
+<h2 align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+</h2>
 
-## Available Scripts
+<p align="center">
 
-In the project directory, you can run:
+[//]: # (<img src="https://img.shields.io/npm/dy/msaserj">)
 
-### `yarn start`
+<img src="https://img.shields.io/badge/made%20by-msaserj-blue.svg" >
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<img src="https://img.shields.io/github/stars/msaserj/it-inc-react-kabzda.svg?style=flat">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img src="https://img.shields.io/badge/React-18.2.0-green.svg">
 
-### `yarn test`
+<img src="https://img.shields.io/github/languages/count/msaserj/inc-socialnetwork">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="https://img.shields.io/github/languages/top/msaserj/inc-socialnetwork.svg">
 
-### `yarn build`
+<img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" >
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[//]: # (<h2 align="center"><a  href="https://msaserj.github.io/it-inc-react-kabzda">Live Demo</a></h2>)
 
-### `yarn eject`
+[//]: # (### [Contributions are Welcome]&#40;https://github.com/silent-lad/VueSolitaire/blob/master/CONTRIBUTING.md&#41;)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Description
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Tutorial project for learning React**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[//]: # (<p align="center"><img src="" width="80%"></p>)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## About the project.
 
-## Learn More
+study of techniques and methods
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**React**,
+**Redux**,
+**TS**,
+**CSS**.
+
+## Project setup
+
+```
+npm install
+npm run serve
+```
+#### use yarn
+```
+yarn
+yarn start
+```
+
+## Future scope
+
+## My Home Page
+
+[Sergei Minko aka msaserj](https://msaserj.ru)
